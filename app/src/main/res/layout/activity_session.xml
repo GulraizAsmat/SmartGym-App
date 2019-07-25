@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Session"
+    android:orientation="vertical"
+    android:background="@color/background"
+
+    >
+
+
+<include layout="@layout/user_app_bar"
+    android:id="@+id/sessionBar"
+    />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+
+        android:layout_alignParentLeft="true">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <Button
+        android:layout_width="274dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:text="Session Start"
+        android:id="@+id/sessionStart"
+        android:textColor="@color/textcolor"
+        android:background="@drawable/roundbutton"
+
+
+
+        />
+
+
+    <Button
+        android:layout_width="274dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:id="@+id/sessionStop"
+        android:text="Session   Stop"
+        android:textColor="@color/textcolor"
+        android:background="@drawable/bt2"
+
+
+        />
+
+
+    <Button
+        android:layout_width="274dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:id="@+id/SessionDownload"
+        android:text="Session download"
+        android:textColor="@color/textcolor"
+        android:background="@drawable/bt3"
+
+        />
+
+
+    <Button
+        android:layout_width="274dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:text="Back"
+        android:id="@+id/backscreen"
+        android:textColor="@color/textcolor"
+        android:background="@drawable/bt4"
+        android:layout_marginBottom="40dp"
+
+
+
+        />
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>

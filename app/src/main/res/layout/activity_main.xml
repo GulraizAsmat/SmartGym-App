@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/background"
+    >
+
+
+
+    <include layout="@layout/app_bar" android:id="@+id/main_bar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+
+        android:layout_alignParentLeft="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+        <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/DropDown"
+        android:prompt="@string/app_name"
+
+
+
+        >
+
+    </Spinner>
+
+
+    <Button
+        android:id="@+id/AddNewUser"
+        android:layout_width="274dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/roundbutton"
+
+        android:text="New User"
+        android:textColor="@color/textcolor"
+
+        />
+
+
+    <Button
+        android:id="@+id/AddNewExercise"
+        android:layout_width="274dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/bt2"
+        android:text="add Exercise"
+        android:textColor="@color/textcolor"
+
+        />
+
+    <Button
+        android:id="@+id/Exit"
+        android:layout_width="274dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/bt3"
+        android:text="Exit"
+        android:textColor="@color/textcolor"
+        android:layout_marginBottom="100dp"
+
+
+        />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

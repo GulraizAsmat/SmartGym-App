@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WorkoutScreen"
+    android:background="@color/background"
+    android:orientation="vertical"
+    >
+
+    <include
+        android:id="@+id/workoutBar"
+        layout="@layout/user_app_bar" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dropDownWorkout"
+        >
+
+    </Spinner>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+
+        android:layout_alignParentLeft="true">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="40dp"
+    >
+
+
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="START"
+
+        android:textColor="@color/textcolor"
+        android:layout_gravity="center"
+        android:background="@drawable/roundbutton"
+    />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Stop"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:textColor="@color/textcolor"
+        android:background="@drawable/bt2"
+        />
+
+
+    <TextView
+        android:id="@+id/statusValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Resting"
+    android:textColor="#D81B60"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        />
+
+
+     <TextView
+         android:id="@+id/timerView"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:textSize="58sp"
+         android:text="00:00:00"
+         android:textColor="#D81B60"
+         android:layout_marginTop="40dp"
+         />
+
+    <Button
+        android:id="@+id/Back"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bt3"
+        android:text="Back"
+        android:textColor="@color/textcolor" />
+
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>
